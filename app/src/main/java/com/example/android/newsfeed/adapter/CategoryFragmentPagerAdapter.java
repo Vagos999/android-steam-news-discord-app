@@ -30,15 +30,9 @@ import android.content.Context;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.android.newsfeed.R;
-import com.example.android.newsfeed.fragment.BusinessFragment;
-import com.example.android.newsfeed.fragment.CultureFragment;
-import com.example.android.newsfeed.fragment.EnvironmentFragment;
-import com.example.android.newsfeed.fragment.FashionFragment;
+import com.example.android.newsfeed.fragment.DiscordBotFragment;
 import com.example.android.newsfeed.fragment.HomeFragment;
-import com.example.android.newsfeed.fragment.ScienceFragment;
-import com.example.android.newsfeed.fragment.SocietyFragment;
-import com.example.android.newsfeed.fragment.SportFragment;
-import com.example.android.newsfeed.fragment.WorldFragment;
+import com.example.android.newsfeed.fragment.SteamTrendsFragment;
 import com.example.android.newsfeed.utils.Constants;
 
 /**
@@ -68,24 +62,12 @@ public class CategoryFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case Constants.HOME:
+            case Constants.HOME_STEAM_NEWS:
                 return new HomeFragment();
-            case Constants.WORLD:
-                return new WorldFragment();
-            case Constants.SCIENCE:
-                return new ScienceFragment();
-            case Constants.SPORT:
-                return new SportFragment();
-            case Constants.ENVIRONMENT:
-                return new EnvironmentFragment();
-            case Constants.SOCIETY:
-                return new SocietyFragment();
-            case Constants.FASHION:
-                return new FashionFragment();
-            case Constants.BUSINESS:
-                return new BusinessFragment();
-            case Constants.CULTURE:
-                return new CultureFragment();
+            case Constants.STEAM_TRENDS:
+                return new SteamTrendsFragment();
+            case Constants.DISCORD_BOT:
+                return new DiscordBotFragment();
             default:
                 return null;
         }
@@ -96,7 +78,7 @@ public class CategoryFragmentPagerAdapter extends FragmentPagerAdapter {
      */
     @Override
     public int getCount() {
-        return 9;
+        return 3;
     }
 
     /**
@@ -106,32 +88,17 @@ public class CategoryFragmentPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         int titleResId;
         switch (position) {
-            case Constants.HOME:
-                titleResId = R.string.ic_title_home;
+            case Constants.HOME_STEAM_NEWS:
+                titleResId = R.string.ic_title_home_steam_news;
                 break;
-            case Constants.WORLD:
-                titleResId = R.string.ic_title_world;
+            case Constants.STEAM_TRENDS:
+                titleResId = R.string.ic_title_steam_trends;
                 break;
-            case Constants.SCIENCE:
-                titleResId = R.string.ic_title_science;
-                break;
-            case Constants.SPORT:
-                titleResId = R.string.ic_title_sport;
-                break;
-            case Constants.ENVIRONMENT:
-                titleResId = R.string.ic_title_environment;
-                break;
-            case Constants.SOCIETY:
-                titleResId = R.string.ic_title_society;
-                break;
-            case Constants.FASHION:
-                titleResId = R.string.ic_title_fashion;
-                break;
-            case Constants.BUSINESS:
-                titleResId = R.string.ic_title_business;
+            case Constants.DISCORD_BOT:
+                titleResId = R.string.ic_title_discord_bot;
                 break;
             default:
-                titleResId = R.string.ic_title_culture;
+                titleResId = R.string.ic_title_home_steam_news;
                 break;
         }
         return mContext.getString(titleResId);
