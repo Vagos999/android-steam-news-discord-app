@@ -22,12 +22,12 @@
  * SOFTWARE.
  */
 
-package com.example.android.newsfeed.utils;
+package com.example.android.steam_news_discord_app.utils;
 
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.example.android.newsfeed.News;
+import com.example.android.steam_news_discord_app.News;
 
 import org.json.JSONArray;
 import org.json.JSONException;

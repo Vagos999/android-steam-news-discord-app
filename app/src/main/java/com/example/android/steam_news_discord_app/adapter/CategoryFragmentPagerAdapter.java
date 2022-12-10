@@ -22,18 +22,18 @@
  * SOFTWARE.
  */
 
-package com.example.android.newsfeed.adapter;
+package com.example.android.steam_news_discord_app.adapter;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import android.content.Context;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.example.android.newsfeed.R;
-import com.example.android.newsfeed.fragment.DiscordBotFragment;
-import com.example.android.newsfeed.fragment.HomeFragment;
-import com.example.android.newsfeed.fragment.SteamTrendsFragment;
-import com.example.android.newsfeed.utils.Constants;
+import com.example.android.steam_news_discord_app.R;
+import com.example.android.steam_news_discord_app.fragment.DiscordBotFragment;
+import com.example.android.steam_news_discord_app.fragment.HomeFragment;
+import com.example.android.steam_news_discord_app.fragment.SteamTrendsFragment;
+import com.example.android.steam_news_discord_app.utils.Constants;
 
 /**
  * Provides the appropriate {@link Fragment} for a view pager.

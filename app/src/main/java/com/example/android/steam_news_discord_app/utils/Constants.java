@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package com.example.android.newsfeed.utils;
+package com.example.android.steam_news_discord_app.utils;
 
 /**
  * Store Constants for the NewsFeed app.

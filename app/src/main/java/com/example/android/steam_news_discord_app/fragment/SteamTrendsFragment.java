@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package com.example.android.newsfeed.fragment;
+package com.example.android.steam_news_discord_app.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -30,23 +30,22 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 
-import com.example.android.newsfeed.R;
+import com.example.android.steam_news_discord_app.R;
 
 /**
- * The HomeFragment is a {@link BaseArticlesFragment} subclass that
- * reuses methods of the parent class
+ * The WorldFragment is a {@link BaseArticlesFragment} subclass that
+ * reuses methods of the parent class by passing the specific type of article to be fetched.
  */
-public class HomeFragment extends BaseArticlesFragment {
+public class SteamTrendsFragment extends BaseArticlesFragment {
 
-    public static final String TAG = HomeFragment.class.getName();
+    private static final String TAG = SteamTrendsFragment.class.getName();
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View homeView = inflater.inflate(R.layout.content_home_steam_news, container, false);
+        View homeView = inflater.inflate(R.layout.content_steam_trends, container, false);
 
         return homeView;
     }
+
 }

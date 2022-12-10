@@ -22,33 +22,19 @@
  * SOFTWARE.
  */
 
-package com.example.android.newsfeed.fragment;
+package com.example.android.steam_news_discord_app.fragment;
 
-import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
-import android.net.Uri;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.loader.app.LoaderManager;
-import androidx.loader.content.Loader;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import android.util.Log;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.android.newsfeed.EmptyRecyclerView;
-import com.example.android.newsfeed.News;
-import com.example.android.newsfeed.R;
-import com.example.android.newsfeed.utils.Constants;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.example.android.steam_news_discord_app.EmptyRecyclerView;
+import com.example.android.steam_news_discord_app.R;
 
 /**
  * The BaseArticlesFragment is a {@link Fragment} subclass that implements the LoaderManager.LoaderCallbacks

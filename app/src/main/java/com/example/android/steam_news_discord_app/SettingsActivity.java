@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package com.example.android.newsfeed;
+package com.example.android.steam_news_discord_app;
 
 import android.app.DatePickerDialog;
 import android.content.SharedPreferences;
