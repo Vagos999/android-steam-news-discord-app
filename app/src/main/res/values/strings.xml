@@ -11,7 +11,8 @@
     <string name="welcome_back">Welcome Back!</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
-    <string name="steam_user_id">Steam User ID</string>
+    <string name="steam_user_id_label">Steam User ID <a href="https://help.steampowered.com/en/faqs/view/2816-BE67-5B69-0FEC">Need Help Finding it?</a></string>
+    <string name="steam_user_id">76561199028406354</string>
     <string name="social_profiles">or use your social profile</string>
     <string name="forgot_password">Forgot Password</string>
     <string name="sign_up">Sign Up</string>

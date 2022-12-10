@@ -65,12 +65,38 @@
         android:inputType="textPassword"
         android:layout_marginBottom="25dp"/>
 
+    <TextView
+        android:id="@+id/steam_user_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_editText"
+        android:text="@string/steam_user_id_label"
+        android:textSize="18dp"
+        android:textColor="@color/nav_bar_start"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+    <EditText
+        android:id="@+id/steam_user_id_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/steam_user_id"
+        android:focusable="true"
+        android:hint="@string/steam_user_id"
+        android:textColorHint="#000000"
+        android:minHeight="40dp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
     <Button
         android:id="@+id/continue_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/password_editText"
+        android:layout_below="@id/steam_user_id_editText"
         android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="25dp"
         android:backgroundTint="@color/nav_bar_start"
         android:text="@string/continue_button"
