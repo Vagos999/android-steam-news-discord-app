@@ -95,4 +95,6 @@ public class Constants {
     public static final int STEAM_TRENDS = 1;
     public static final int DISCORD_BOT = 2;
     public static final int SIGN_IN = 3;
+
+    public static String CURRENT_USER = "";
 }
