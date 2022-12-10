@@ -22,32 +22,28 @@
  * SOFTWARE.
  */
 
-package com.example.android.newsfeed.fragment;
+package com.example.android.steam_news_discord_app.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 
-import com.example.android.newsfeed.R;
-
-import java.util.List;
+import com.example.android.steam_news_discord_app.R;
 
 /**
- * The WorldFragment is a {@link BaseArticlesFragment} subclass that
- * reuses methods of the parent class by passing the specific type of article to be fetched.
+ * The HomeFragment is a {@link BaseArticlesFragment} subclass that
+ * reuses methods of the parent class
  */
-public class DiscordBotFragment extends BaseArticlesFragment {
+public class HomeFragment extends BaseArticlesFragment {
 
-    private static final String TAG = DiscordBotFragment.class.getName();
+    public static final String TAG = HomeFragment.class.getName();
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        View homeView = inflater.inflate(R.layout.content_discord_bot, container, false);
+        View homeView = inflater.inflate(R.layout.content_home_steam_news, container, false);
 
         return homeView;
     }

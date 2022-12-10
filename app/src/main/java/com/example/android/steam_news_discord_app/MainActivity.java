@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package com.example.android.newsfeed;
+package com.example.android.steam_news_discord_app;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -38,8 +38,8 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.android.newsfeed.adapter.CategoryFragmentPagerAdapter;
-import com.example.android.newsfeed.utils.Constants;
+import com.example.android.steam_news_discord_app.adapter.CategoryFragmentPagerAdapter;
+import com.example.android.steam_news_discord_app.utils.Constants;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

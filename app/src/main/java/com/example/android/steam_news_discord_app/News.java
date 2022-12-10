@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package com.example.android.newsfeed;
+package com.example.android.steam_news_discord_app;
 
 /**
  * An {@link News} object contains information related to a single news.
