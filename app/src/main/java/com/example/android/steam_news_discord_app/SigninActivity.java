@@ -76,7 +76,7 @@ public class SigninActivity extends AppCompatActivity {
 
                 if(dbHandler.checkIfCredentialsAreCorrect(username,password)){
                     Toast.makeText(SigninActivity.this, "Successfully logged in!", Toast.LENGTH_SHORT).show();
-                    Constants.CURRENT_USER = username;
+                    Constants.CURRENT_USER_STEAM_ID = dbHandler.getCurrentUserSteamId(username);
                     openHomeActivity();
                 }else{
                     Toast.makeText(SigninActivity.this, "Wrong credentials! Signup first?", Toast.LENGTH_SHORT).show();
