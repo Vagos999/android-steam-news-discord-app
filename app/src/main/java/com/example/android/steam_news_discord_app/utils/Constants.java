@@ -25,6 +25,7 @@
 package com.example.android.steam_news_discord_app.utils;
 
 import com.example.android.steam_news_discord_app.models.Game;
+import com.example.android.steam_news_discord_app.models.News;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -103,4 +104,6 @@ public class Constants {
 
     public static String CURRENT_USER_STEAM_ID = "";
     public static List<Game> CURRENT_USER_APP_IDS = new ArrayList<Game>();
+    public static List<News> CURRENT_NEWS = new ArrayList<News>();
+
 }

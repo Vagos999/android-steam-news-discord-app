@@ -28,10 +28,16 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
 import com.example.android.steam_news_discord_app.R;
+import com.example.android.steam_news_discord_app.models.Game;
+import com.example.android.steam_news_discord_app.utils.Constants;
+import com.example.android.steam_news_discord_app.utils.JSONAsyncTask;
 
 /**
  * The HomeFragment is a {@link BaseArticlesFragment} subclass that
@@ -44,6 +50,10 @@ public class HomeFragment extends BaseArticlesFragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         View homeView = inflater.inflate(R.layout.content_home_steam_news, container, false);
+
+        JSONAsyncTask jsonAsyncTask = new JSONAsyncTask(homeView, getActivity());
+        jsonAsyncTask.execute("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=7648647C000658663FEC746BE49F8522&steamid="+Constants.CURRENT_USER_STEAM_ID+"&format=json&include_appinfo=true");
+
 
         return homeView;
     }

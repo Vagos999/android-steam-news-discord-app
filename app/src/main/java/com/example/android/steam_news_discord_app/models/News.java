@@ -1,28 +1,6 @@
-/*
- * MIT License
- *
- * Copyright (c) 2018 Soojeong Shin
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- */
+package com.example.android.steam_news_discord_app.models;
 
-package com.example.android.steam_news_discord_app;
+import java.util.Date;
 
 /**
  * An {@link News} object contains information related to a single news.
@@ -40,7 +18,7 @@ public class News {
     private String mAuthor;
 
     /** Web publication date of the article */
-    private String mDate;
+    private Date mDate;
 
     /** Website URL of the article */
     private String mUrl;
@@ -62,13 +40,11 @@ public class News {
      * @param thumbnail is the thumbnail of the article
      * @param trailText is trail text of the article with string type Html
      */
-    public News(String title, String section, String author, String date, String url, String thumbnail, String trailText) {
+    public News(String title, String author, int date, String url, String trailText) {
         mTitle = title;
-        mSection = section;
         mAuthor = author;
-        mDate = date;
+        mDate = new Date(date);
         mUrl = url;
-        mThumbnail = thumbnail;
         mTrailTextHtml = trailText;
     }
 
@@ -95,7 +71,7 @@ public class News {
     /**
      * Returns the web publication date of the article.
      */
-    public String getDate() {
+    public Date getDate() {
         return mDate;
     }
 
