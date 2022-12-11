@@ -27,6 +27,7 @@ package com.example.android.steam_news_discord_app;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+import com.example.android.steam_news_discord_app.utils.JSONAsyncTask;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabLayout;
 import androidx.core.view.GravityCompat;
@@ -52,6 +53,9 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        JSONAsyncTask jsonAsyncTask = new JSONAsyncTask();
+        jsonAsyncTask.execute("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=7648647C000658663FEC746BE49F8522&steamid="+Constants.CURRENT_USER_STEAM_ID+"&format=json&include_appinfo=true");
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

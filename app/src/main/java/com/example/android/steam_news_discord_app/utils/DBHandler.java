@@ -145,7 +145,7 @@ public class DBHandler extends SQLiteOpenHelper {
         return false;
     }
 
-    public String getCurrentUserSteamId() {
+    public String getCurrentUserSteamId(String username) {
         // array of columns to fetch
         String[] columns = {
                 STEAMID_COL
@@ -154,7 +154,7 @@ public class DBHandler extends SQLiteOpenHelper {
         // selection criteria
         String selection = USERNAME_COL + " = ?";
         // selection argument
-        String[] selectionArgs = {Constants.CURRENT_USER};
+        String[] selectionArgs = {username};
 
         String steamId = "";
         SQLiteDatabase db = this.getReadableDatabase();

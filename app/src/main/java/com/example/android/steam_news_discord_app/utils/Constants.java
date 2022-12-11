@@ -24,6 +24,11 @@
 
 package com.example.android.steam_news_discord_app.utils;
 
+import com.example.android.steam_news_discord_app.models.Game;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Store Constants for the NewsFeed app.
  */
@@ -96,5 +101,6 @@ public class Constants {
     public static final int DISCORD_BOT = 2;
     public static final int SIGN_IN = 3;
 
-    public static String CURRENT_USER = "";
+    public static String CURRENT_USER_STEAM_ID = "";
+    public static List<Game> CURRENT_USER_APP_IDS = new ArrayList<Game>();
 }
