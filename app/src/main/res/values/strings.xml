@@ -32,7 +32,6 @@
     <string name="ic_title_home_steam_news">Home (Steam News)</string>
     <string name="ic_title_steam_trends">Steam Trends</string>
     <string name="ic_title_discord_bot">Discord Bot</string>
-    <string name="ic_title_sign_in">Sign In</string>
 
     <!-- Text to display in the list when there are no news [CHAR LIMIT=NONE] -->
     <string name="no_news">No news found.</string>

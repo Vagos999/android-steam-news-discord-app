@@ -11,8 +11,6 @@ public class News {
     /** Title of the article */
     private String mTitle;
 
-    /** Section name of the article*/
-    private String mSection;
 
     /** Author name in the article */
     private String mAuthor;
@@ -23,9 +21,6 @@ public class News {
     /** Website URL of the article */
     private String mUrl;
 
-    /** Thumbnail of the article */
-    private String mThumbnail;
-
     /** TrailText of the article with string type Html */
     private String mTrailTextHtml;
 
@@ -33,11 +28,9 @@ public class News {
      * Constructs a new {@link News} object.
      *
      * @param title is the title of the article
-     * @param section is the section name of the article
      * @param author is author name in article
      * @param date is the web publication date of the article
      * @param url is the website URL to find more details about the article
-     * @param thumbnail is the thumbnail of the article
      * @param trailText is trail text of the article with string type Html
      */
     public News(String title, String author, int date, String url, String trailText) {
@@ -53,13 +46,6 @@ public class News {
      */
     public String getTitle() {
         return mTitle;
-    }
-
-    /**
-     * Returns the section name of the article.
-     */
-    public String getSection() {
-        return mSection;
     }
 
     /**
@@ -80,13 +66,6 @@ public class News {
      */
     public String getUrl() {
         return mUrl;
-    }
-
-    /**
-     * Returns the thumbnail of the article
-     */
-    public String getThumbnail() {
-        return mThumbnail;
     }
 
     /**
