@@ -54,9 +54,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        JSONAsyncTask jsonAsyncTask = new JSONAsyncTask();
-        jsonAsyncTask.execute("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=7648647C000658663FEC746BE49F8522&steamid="+Constants.CURRENT_USER_STEAM_ID+"&format=json&include_appinfo=true");
-
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
