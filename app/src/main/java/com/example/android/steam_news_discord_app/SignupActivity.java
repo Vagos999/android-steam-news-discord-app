@@ -28,7 +28,7 @@ public class SignupActivity extends AppCompatActivity {
         passwordEdt = findViewById(R.id.password_editText);
         steamIdEdt = findViewById(R.id.steam_user_id_editText);
 
-        steamIdEdt.setText("76561199028406354");
+        steamIdEdt.setText("76561198419498989");
 
 
         // creating a new dbhandler class
