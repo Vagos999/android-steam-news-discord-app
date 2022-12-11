@@ -1,38 +1,12 @@
-/*
- * MIT License
- *
- * Copyright (c) 2018 Soojeong Shin
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- */
-
 package com.example.android.steam_news_discord_app.utils;
 
+import com.example.android.steam_news_discord_app.models.AllItemsPerGame;
 import com.example.android.steam_news_discord_app.models.Game;
 import com.example.android.steam_news_discord_app.models.News;
+import com.example.android.steam_news_discord_app.models.ItemAvgPrices;
 
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * Store Constants for the NewsFeed app.
- */
 
 public class Constants {
 
@@ -54,44 +28,9 @@ public class Constants {
     static final String JSON_KEY_THUMBNAIL = "thumbnail";
     static final String JSON_KEY_TRAIL_TEXT = "trailText";
 
-    /** Read timeout for setting up the HTTP request */
-    static final int READ_TIMEOUT = 10000; /* milliseconds */
-
-    /** Connect timeout for setting up the HTTP request */
-    static final int CONNECT_TIMEOUT = 15000; /* milliseconds */
-
-    /** HTTP response code when the request is successful */
-    static final int SUCCESS_RESPONSE_CODE = 200;
-
-    /** Request method type "GET" for reading information from the server */
-    static final String REQUEST_METHOD_GET = "GET";
-
-    /** URL for news data from the guardian data set */
-    public static final String NEWS_REQUEST_URL = "https://content.guardianapis.com/search";
-
-    /** Parameters */
-    public static final String QUERY_PARAM = "q";
-    public static final String ORDER_BY_PARAM = "order-by";
-    public static final String PAGE_SIZE_PARAM = "page-size";
-    public static final String ORDER_DATE_PARAM = "order-date";
-    public static final String FROM_DATE_PARAM = "from-date";
-    public static final String SHOW_FIELDS_PARAM = "show-fields";
-    public static final String FORMAT_PARAM = "format";
-    public static final String SHOW_TAGS_PARAM = "show-tags";
-    public static final String API_KEY_PARAM = "api-key";
-    public static final String SECTION_PARAM = "section";
-
-    /** The show fields we want our API to return */
-    public static final String SHOW_FIELDS = "thumbnail,trailText";
-
-    /** The format we want our API to return */
-    public static final String FORMAT = "json";
-
-    /** The show tags we want our API to return */
-    public static final String SHOW_TAGS = "contributor";
-
     /** API Key */
-    public static final String API_KEY = "test"; // Use your API Key when API rate limit exceeded
+    public static final String EXTERNAL_API_KEY = "4lJLVKdTtAO6pYsGv7thIc3S_2g";
+    public static final String STEAM_API_KEY = "7648647C000658663FEC746BE49F8522";
 
     /** Default number to set the image on the top of the textView */
     public static final int DEFAULT_NUMBER = 0;
@@ -100,10 +39,13 @@ public class Constants {
     public static final int HOME_STEAM_NEWS = 0;
     public static final int STEAM_TRENDS = 1;
     public static final int DISCORD_BOT = 2;
-    public static final int SIGN_IN = 3;
 
     public static String CURRENT_USER_STEAM_ID = "";
     public static List<Game> CURRENT_USER_APP_IDS = new ArrayList<Game>();
+
     public static List<News> CURRENT_NEWS = new ArrayList<News>();
 
+    public static List<ItemAvgPrices> ITEM_AVG_PRICES = new ArrayList<ItemAvgPrices>();
+
+    public static List<AllItemsPerGame> ALL_ITEMS_PER_GAME = new ArrayList<AllItemsPerGame>();
 }

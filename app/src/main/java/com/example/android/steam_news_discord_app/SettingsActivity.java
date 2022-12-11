@@ -55,12 +55,6 @@ public class SettingsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
 
-    /**
-     * The NewsPreferenceFragment implements the Preference.OnPreferenceChangeListener interface
-     * to set up to listen for any Preference changes made by the user.
-     * And the NewsPreferenceFragment also implements the DatePickerDialog.OnDateSetListener to
-     * receive a callback when the user has finished selecting a date.
-     */
     public static class NewsPreferenceFragment extends PreferenceFragment
             implements Preference.OnPreferenceChangeListener, DatePickerDialog.OnDateSetListener {
 
